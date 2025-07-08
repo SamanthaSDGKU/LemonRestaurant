@@ -12,7 +12,7 @@ struct AboutView: View {
     @State private var userName = ""
     @State private var reservations = 0 // reservation variable
     var body: some View {
-        VStack{
+        VStack{ // alignment: .leading .center .trailing
             Text("Welcome \(userName) to Little Lemon!")
                 .font(.title)
                 .padding()
@@ -24,6 +24,8 @@ struct AboutView: View {
             Button("Order again"){
                 orders += 1
             }
+            Divider()
+            Spacer()
             //challenge add another button to reset to 0 the orders
             Button("Reset"){
                 orders = 0

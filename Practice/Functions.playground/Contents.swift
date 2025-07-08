@@ -31,3 +31,13 @@ let total = calculateTotal(price: 99.9, quantity: 2)
 print(total)
 
 // mini-ex: Create a function deliveryTime(minutes:) that returns "Ready in X minutes".
+func deliveryTime(minutes: Int)->String{
+    return "Ready in \(minutes) minutes"
+}
+
+
+print(deliveryTime(minutes: 10))
+print(deliveryTime(minutes: 20))
+
+
+// mini-ex: Create a function to calculate price + tax and show result.
